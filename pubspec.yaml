@@ -1,0 +1,104 @@
+name: aladdin_jin
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0-174.2.beta <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+    # buu esa hind akaniki
+  speech_to_text: ^6.5.1
+  # textni  speech qiladi
+  flutter_tts: ^3.8.5
+  # animatsiya uchun
+  flutter_launcher_icons: ^0.13.1
+  gap: ^3.0.1
+  animate_do: ^3.1.2
+  http: ^1.1.2
+
+    # kerakli paketlar bu productive ichidagilari
+  # cupertino_icons: ^1.0.6
+  # flutter_launcher_icons: ^0.13.1
+  # flutter_svg: ^2.0.8
+  # video_player: ^2.7.2
+  # gap: ^3.0.1
+  # pinput: ^3.0.1
+  # smooth_page_indicator: ^1.1.0
+  # flutter_bloc: any
+  # provider: ^6.1.1
+  # flutter_slidable: ^3.0.1
+
+dev_dependencies:
+
+
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^3.0.0
+
+  # logo uchun 
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo/logo.webp"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/logo/logo.webp"
+    background_color: "#hexcode"
+    theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/logo/logo.webp"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logo/logo.webp"
+
+
+# following page: https://dart.dev/tools/pub/pubspec
+
+
+flutter:
+
+ 
+  uses-material-design: true
+
+  # assetlar uchun 
+  assets:
+    - assets/fonts/
+    - assets/logo/
+    - assets/sounds/
+    - assets/images/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+ 
+ # font uchun 
+  fonts:
+    - family: Barlow
+      fonts:
+        - asset: assets/fonts/Barlow-Bold.ttf
+        - asset: assets/fonts/Barlow-BoldItalic.ttf
+        - asset: assets/fonts/Barlow-ExtraBold.ttf
+        - asset: assets/fonts/Barlow-ExtraBoldItalic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
